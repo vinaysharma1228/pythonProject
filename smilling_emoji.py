@@ -7,7 +7,7 @@ screen.title("Smiling Emoji")
 
 # Create a turtle for drawing
 emoji_turtle = turtle.Turtle()
-emoji_turtle.speed(1)  # Set the drawing speed
+emoji_turtle.speed(2)  # Set the drawing speed
 
 
 # Draw a smiling emoji
