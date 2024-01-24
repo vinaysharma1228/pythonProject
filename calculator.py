@@ -7,11 +7,21 @@ def add():
     b=secondNumber.get()
     a=int(a)
     b=int(b)
+    sum=a+b
 
-    ans2=Label(frame,text=a+b,foreground="white",background="navy",font=("Arial",16))
+    ans2=Label(frame,text=f"Addition : {sum}",foreground="white",background="navy",font=("Arial",16))
     ans2.grid(row=3, columnspan=3, pady=5)
 
 
+def sub():
+    a=firstNumber.get()
+    b=secondNumber.get()
+    a=int(a)
+    b=int(b)
+    sb=a-b
+
+    ans2=Label(frame,text=f"Subrtaction : {sb}",foreground="white",background="navy",font=("Arial",16))
+    ans2.grid(row=3, columnspan=3, pady=5)
 
 vinay = Tk()
 vinay.title("Calculator")
@@ -35,7 +45,7 @@ secondNumber = Entry(frame)
 
 # Plus Button
 plus_button = Button(frame, text="+", foreground="white", background="blue",font=("Arial",16),command=add)
-minus_button = Button(frame, text="-", foreground="white", background="blue",font=("Arial",16))
+minus_button = Button(frame, text="-", foreground="white", background="blue",font=("Arial",16),command=sub)
 multiplication_button = Button(frame, text="x", foreground="white", background="blue",font=("Arial",16))
 division_button = Button(frame, text="/", foreground="white", background="blue",font=("Arial",16))
 
