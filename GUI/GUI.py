@@ -36,7 +36,7 @@ user_mob = Entry(frame)
 # Language
 course = Label(frame, text="Select Language:", foreground="blue")
 combo = Combobox(values=["Python", "C", "C++", "Java"])
-combo.grid(row=3, column=1, padx=5, pady=5)
+
 
 # Button
 submit_button = Button(frame, text="Submit", foreground="white", background="blue", command=submit)
